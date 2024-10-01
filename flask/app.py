@@ -54,7 +54,7 @@ class Doctor(Person):
         as if it were 10 mins long.
         """
         if num_mins < 10:
-            result = self.hourly_rate / 6
+            result = self.hourly_rate / 600
         else:
             result = self.hourly_rate * (num_mins / 60)
         return result
